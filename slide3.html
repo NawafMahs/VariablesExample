@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المتغيرات في C#</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+      
+      body {
+        font-family: 'Tajawal', sans-serif;
+      }
+      
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #FFFFFF;
+        color: #333333;
+        padding: 2rem;
+      }
+      
+      .title {
+        color: #0078D7;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+      
+      .content {
+        font-size: 24px;
+      }
+      
+      .highlight {
+        color: #68217A;
+        font-weight: bold;
+      }
+      
+      .interactive-question {
+        background-color: #f0f7ff;
+        border-left: 5px solid #0078D7;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        border-radius: 0.5rem;
+      }
+      
+      .code-block {
+        background-color: #f8f8f8;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-family: 'Consolas', monospace;
+        direction: ltr;
+        text-align: left;
+        border-left: 4px solid #0078D7;
+      }
+      
+      .analogy-box {
+        background-color: #f5f0ff;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        border-right: 4px solid #68217A;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container shadow-xl rounded-lg">
+      <h1 class="title">المتغيرات في C#</h1>
+      
+      <div class="flex justify-between">
+        <div class="w-1/2 pr-4">
+          <div class="content">
+            <p class="mb-4"><span class="highlight">المتغير</span> هو مساحة في ذاكرة الحاسوب تستخدم لتخزين البيانات:</p>
+            <ul class="list-disc mr-8 space-y-3">
+              <li>يمكن تغيير قيمته خلال تنفيذ البرنامج</li>
+              <li>له <span class="highlight">اسم</span> يميزه عن باقي المتغيرات</li>
+              <li>له <span class="highlight">نوع بيانات</span> يحدد نوع القيم التي يمكن تخزينها</li>
+              <li>له <span class="highlight">قيمة</span> مخزنة فيه</li>
+            </ul>
+          </div>
+          
+          <div class="analogy-box mt-6">
+            <p class="font-bold mb-2">🧠 تشبيه لتقريب المفهوم:</p>
+            <p>المتغير مثل <span class="highlight">صندوق</span> له:</p>
+            <ul class="list-disc mr-8 mt-2">
+              <li><span class="highlight">ملصق</span> عليه (اسم المتغير)</li>
+              <li><span class="highlight">نوع محدد</span> من المحتويات يمكن وضعها فيه (نوع البيانات)</li>
+              <li><span class="highlight">محتوى</span> داخله (القيمة)</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="w-1/2">
+          <div class="mb-4">
+            <img src="/home/ubuntu/csharp_presentation/images/variables_concept.jpg" alt="مفهوم المتغيرات" style="width: 600px; height: 300px; object-fit: cover;" class="rounded-lg shadow-md">
+          </div>
+          
+          <div class="code-block mt-4">
+            <p class="text-gray-500">// أمثلة على إعلان المتغيرات في C#</p>
+            <p class="text-blue-600">int</p> age = 20; <span class="text-gray-500">// متغير لتخزين العمر</span><br>
+            <p class="text-blue-600">string</p> name = "أحمد"; <span class="text-gray-500">// متغير لتخزين الاسم</span><br>
+            <p class="text-blue-600">double</p> height = 175.5; <span class="text-gray-500">// متغير لتخزين الطول</span><br>
+            <p class="text-blue-600">bool</p> isStudent = true; <span class="text-gray-500">// متغير لتخزين حالة الطالب</span>
+          </div>
+          
+          <div class="interactive-question mt-4">
+            <p class="font-bold mb-2">💡 فكر معي:</p>
+            <p>ما هي الأشياء في حياتنا اليومية التي يمكن تمثيلها بمتغيرات؟</p>
+            <p class="text-sm mt-2">(مثال: درجة الحرارة، عدد الطلاب، اسم المدرسة)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

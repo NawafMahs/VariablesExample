@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أنواع المتغيرات في C#</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+      
+      body {
+        font-family: 'Tajawal', sans-serif;
+      }
+      
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #FFFFFF;
+        color: #333333;
+        padding: 2rem;
+      }
+      
+      .title {
+        color: #0078D7;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+      
+      .content {
+        font-size: 24px;
+      }
+      
+      .highlight {
+        color: #68217A;
+        font-weight: bold;
+      }
+      
+      .interactive-question {
+        background-color: #f0f7ff;
+        border-left: 5px solid #0078D7;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        border-radius: 0.5rem;
+      }
+      
+      .data-type {
+        background-color: #f0f0f0;
+        border-radius: 0.5rem;
+        padding: 0.75rem;
+        margin-bottom: 0.75rem;
+        display: flex;
+        align-items: center;
+      }
+      
+      .data-type-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container shadow-xl rounded-lg">
+      <h1 class="title">أنواع المتغيرات في C#</h1>
+      
+      <div class="flex justify-between">
+        <div class="w-1/2 pr-4">
+          <div class="content">
+            <p class="mb-4">الأنواع الأساسية للمتغيرات في C#:</p>
+            
+            <div class="data-type">
+              <div class="data-type-icon bg-blue-500 text-white">
+                <i class="fas fa-hashtag"></i>
+              </div>
+              <div>
+                <p class="font-bold">الأعداد الصحيحة (Integer)</p>
+                <p class="text-sm">int, long, short, byte</p>
+              </div>
+            </div>
+            
+            <div class="data-type">
+              <div class="data-type-icon bg-green-500 text-white">
+                <i class="fas fa-calculator"></i>
+              </div>
+              <div>
+                <p class="font-bold">الأعداد العشرية (Floating Point)</p>
+                <p class="text-sm">float, double, decimal</p>
+              </div>
+            </div>
+            
+            <div class="data-type">
+              <div class="data-type-icon bg-yellow-500 text-white">
+                <i class="fas fa-font"></i>
+              </div>
+              <div>
+                <p class="font-bold">النصوص (Text)</p>
+                <p class="text-sm">char, string</p>
+              </div>
+            </div>
+            
+            <div class="data-type">
+              <div class="data-type-icon bg-red-500 text-white">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div>
+                <p class="font-bold">القيم المنطقية (Boolean)</p>
+                <p class="text-sm">bool (true/false)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="w-1/2">
+          <div class="mb-4">
+            <img src="/home/ubuntu/csharp_presentation/images/variables_types.webp" alt="أنواع المتغيرات" style="width: 600px; height: 300px; object-fit: cover;" class="rounded-lg shadow-md">
+          </div>
+          
+          <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="font-bold text-lg mb-3 text-center">مقارنة بين أنواع البيانات الشائعة</p>
+            <div class="overflow-x-auto">
+              <table class="min-w-full bg-white">
+                <thead>
+                  <tr>
+                    <th class="py-2 px-4 border-b">النوع</th>
+                    <th class="py-2 px-4 border-b">المدى</th>
+                    <th class="py-2 px-4 border-b">مثال</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-2 px-4 border-b font-bold text-blue-600">int</td>
+                    <td class="py-2 px-4 border-b">-2.1 مليار إلى 2.1 مليار</td>
+                    <td class="py-2 px-4 border-b">int age = 25;</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b font-bold text-green-600">double</td>
+                    <td class="py-2 px-4 border-b">±5.0 × 10<sup>−324</sup> إلى ±1.7 × 10<sup>308</sup></td>
+                    <td class="py-2 px-4 border-b">double price = 19.99;</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b font-bold text-yellow-600">string</td>
+                    <td class="py-2 px-4 border-b">0 إلى 2 مليار حرف</td>
+                    <td class="py-2 px-4 border-b">string name = "محمد";</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b font-bold text-red-600">bool</td>
+                    <td class="py-2 px-4 border-b">true أو false</td>
+                    <td class="py-2 px-4 border-b">bool isActive = true;</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div class="interactive-question mt-4">
+            <p class="font-bold mb-2">🎯 تحدي سريع:</p>
+            <p>ما هو نوع البيانات المناسب لتخزين كل من:</p>
+            <p>1. عمر شخص &nbsp; 2. درجة الحرارة &nbsp; 3. اسم مدينة &nbsp; 4. حالة مصباح (مضاء/مطفأ)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      // يمكن إضافة تفاعل للتحدي السريع هنا إذا لزم الأمر
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نشاط تفاعلي: تحدي المتغيرات</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+      
+      body {
+        font-family: 'Tajawal', sans-serif;
+      }
+      
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #FFFFFF;
+        color: #333333;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .title {
+        color: #0078D7;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+      
+      .content {
+        font-size: 22px;
+      }
+      
+      .highlight {
+        color: #68217A;
+        font-weight: bold;
+      }
+      
+      .challenge-card {
+        background-color: #f0f7ff;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-right: 4px solid #0078D7;
+      }
+      
+      .code-block {
+        background-color: #f8f8f8;
+        border-radius: 0.5rem;
+        padding: 0.75rem;
+        font-family: 'Consolas', monospace;
+        direction: ltr;
+        text-align: left;
+        border-left: 4px solid #0078D7;
+        margin-bottom: 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container shadow-xl rounded-lg">
+      <h1 class="title">نشاط تفاعلي: تحدي المتغيرات</h1>
+      
+      <div class="flex justify-between flex-grow">
+        <div class="w-1/2 pr-4">
+          <div class="challenge-card">
+            <div class="flex items-center mb-2">
+              <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold ml-3">1</div>
+              <h2 class="text-xl font-bold">تحدي التصنيف</h2>
+            </div>
+            <p>صنف المتغيرات التالية حسب نوع البيانات المناسب:</p>
+            <div class="grid grid-cols-2 gap-2 mt-3">
+              <div class="bg-white p-2 rounded border">عمر الطالب</div>
+              <div class="bg-white p-2 rounded border">اسم المدرسة</div>
+              <div class="bg-white p-2 rounded border">معدل الدرجات</div>
+              <div class="bg-white p-2 rounded border">ناجح/راسب</div>
+            </div>
+          </div>
+          
+          <div class="challenge-card">
+            <div class="flex items-center mb-2">
+              <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold ml-3">2</div>
+              <h2 class="text-xl font-bold">تحدي الأخطاء</h2>
+            </div>
+            <p>حدد الخطأ في كل سطر من الأكواد التالية:</p>
+            <div class="code-block mt-3">
+              <p class="text-blue-600">int</p> age = "25";<br>
+              <p class="text-blue-600">string</p> name = محمد;<br>
+              <p class="text-blue-600">bool</p> isActive = 1;<br>
+              <p class="text-blue-600">double</p> price = 19,99;
+            </div>
+          </div>
+        </div>
+        
+        <div class="w-1/2">
+          <div class="challenge-card">
+            <div class="flex items-center mb-2">
+              <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold ml-3">3</div>
+              <h2 class="text-xl font-bold">تحدي الإكمال</h2>
+            </div>
+            <p>أكمل الكود التالي بإضافة نوع البيانات المناسب:</p>
+            <div class="code-block mt-3">
+              <p class="text-gray-500">// أكمل نوع البيانات المناسب</p>
+              _____ studentName = "سارة";<br>
+              _____ studentAge = 18;<br>
+              _____ studentGPA = 3.75;<br>
+              _____ isGraduated = false;
+            </div>
+          </div>
+          
+          <div class="challenge-card">
+            <div class="flex items-center mb-2">
+              <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold ml-3">4</div>
+              <h2 class="text-xl font-bold">تحدي التطبيق</h2>
+            </div>
+            <p>اكتب كود C# لإنشاء المتغيرات التالية:</p>
+            <ul class="list-disc mr-6 mt-2 space-y-1">
+              <li>متغير لتخزين درجة الحرارة (عدد عشري)</li>
+              <li>متغير لتخزين عدد الطلاب (عدد صحيح)</li>
+              <li>متغير لتخزين اسم المادة (نص)</li>
+              <li>متغير لتخزين حالة الدوام (منطقي)</li>
+            </ul>
+          </div>
+          
+          <div class="mt-4 text-center">
+            <p class="text-lg font-bold text-blue-600">⏱️ وقت النشاط: 5 دقائق</p>
+            <p class="text-sm">ناقش الإجابات مع زملائك بعد الانتهاء</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
